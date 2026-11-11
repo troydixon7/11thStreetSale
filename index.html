@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Estate Sale in Sand Springs | DAGMG</title>
+
+    <link rel="stylesheet" href="style2.css">
+    <link rel="icon" type="image/png" href="images/arrows1.png">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Estate Sale in Sand Springs, Oklahoma">
+    <meta property="og:description"
+          content="Join us November 12-14 at 505 E 11th Street, Sand Springs, OK. Browse estate sale photos, directions, and Saturday discounts!">
+    <meta property="og:image"
+          content="https://www.dagmg.net/images/eanhouse1.png">
+    <meta property="og:url"
+          content="https://www.dagmg.net/index2.html">
+    <meta property="og:site_name" content="DAGMG">
+    <meta property="og:image:alt"
+          content="Estate Sale in Sand Springs, Oklahoma">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title"
+          content="Estate Sale in Sand Springs">
+    <meta name="twitter:description"
+          content="November 12-14 in Sand Springs, Oklahoma. View photos and directions!">
+    <meta name="twitter:image"
+          content="https://www.dagmg.net/images/eanhouse1.png">
+</head>
+
+
+<body>
+    <div class="container">
+<header>
+<div class="share-links">
+
+<a href="mailto:?subject=Estate%20Sale%20in%20Sand%20Springs&body=Check%20out%20this%20estate%20sale%20in%20Sand%20Springs!%0A%0AThursday%20Nov%2012%3A%2010-4%0AFri%20Nov%2013%3A%2010-4%0ASaturday%20Nov%2014%3A%2010-5%0A%0ASee%20photos%2C%20details%2C%20and%20directions%20here%3A%0Ahttps%3A%2F%2Fwww.dagmg.net%2Findex2.html">
+    &#9993; Email to a Friend
+</a>
+
+<a href="sms:?&body=Estate%20Sale%20in%20Sand%20Springs!%20Nov%2012-14.%20Check%20out%20the%20photos%2C%20details%2C%20and%20directions%20here%3A%20https%3A%2F%2Fwww.dagmg.net%2Findex2.html">
+    &#128172; Text to a Friend
+</a>
+
+</div>
+   
+    <img src="images/arrows1.png"
+         alt="Estate Sale Logo"
+         style="max-width:100px; margin-bottom:15px;">
+
+    <img src="images/eanhouse1.png"
+         alt="Click to see directions to the estate sale"
+         class="clickable-house"
+         onclick="openDirections()">
+
+    <p class="click-hint">Click the house image for directions</p>
+
+    <h1>Estate Sale in Sand Springs</h1>
+<p>
+    <a href="https://www.google.com/maps/search/?api=1&query=505+E+11th+Street+Sand+Springs+OK+74063"
+       target="_blank"
+       rel="noopener noreferrer">
+        505 E 11th Street, Sand Springs, OK 74063  (GOOGLE MAPS LINK)
+    </a>
+</p>
+
+</header>
+
+<div id="directionsModal" class="modal">
+
+    <div class="modal-content">
+
+        <button class="close-modal" onclick="closeDirections()">
+            &times;
+        </button>
+
+        <h2>How to Find Us</h2>
+        <p>Follow these photos to find the estate sale.</p>
+
+        <div class="directions-slideshow">
+
+            <img src="images/ID0.png"
+                 class="direction-slide active"
+                 alt="Starting intersection">
+
+            <img src="images/ID1.png"
+                 class="direction-slide"
+                 alt="Route toward the estate sale">
+
+            <img src="images/ID2.png"
+                 class="direction-slide"
+                 alt="Final approach to the house">
+
+            <button class="direction-prev"
+                    onclick="changeDirection(-1)">&#10094;</button>
+
+            <button class="direction-next"
+                    onclick="changeDirection(1)">&#10095;</button>
+
+        </div>
+
+        <p id="directionCounter">1 of 3</p>
+
+    </div>
+
+</div>
+
+
+        <!-- SALE DETAILS -->
+        <section class="sale-info">
+
+            <h2>Sale Dates & Hours</h2>
+
+            <div class="schedule">
+                <p><strong>Thursday, November 12:</strong> 10 AM – 4 PM</p>
+                <p><strong>Friday, November 13:</strong> 10 AM – 4 PM</p>
+                <p><strong>Saturday, November 14:</strong> 10 AM – 5 PM</p>
+            </div>
+
+            <div class="discount">
+                <p>
+                    <strong>Saturday Discounts!</strong>
+                    Items will be discounted by Saturday. But better hurry!<br>
+                    Boxed Hallmark Christmas items not discounted.
+                </p>
+            </div>
+
+        </section>
+
+      <section class="gallery-section">
+    <h2>Estate Sale Photo Gallery</h2>
+    <p class="intro">Take a look at some of the items available!</p>
+
+    <div class="slideshow">
+
+        <img class="slide active" src="images/DAGManagment.png" alt="Estate sale item 1">
+        <img class="slide" src="images/image2.jpeg" alt="Estate sale item 2">
+        <img class="slide" src="images/image1.jpeg" alt="Estate sale item 3">
+        <img class="slide" src="images/image4.jpeg" alt="Estate sale item 4">
+        <img class="slide" src="images/image3.jpeg" alt="Estate sale item 5">
+        <img class="slide" src="images/image5.jpeg" alt="Estate sale item 6">
+        <img class="slide" src="images/image6.jpeg" alt="Estate sale item 6">
+        <img class="slide" src="images/image7.jpeg" alt="Estate sale item 6">
+        <img class="slide" src="images/image8.jpeg" alt="Estate sale item 6">
+        <img class="slide" src="images/image9.jpeg" alt="Estate sale item 6">
+        <img class="slide" src="images/image10.jpeg" alt="Estate sale item 6">
+
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+
+    </div>
+
+    <div class="dots" id="dots"></div>
+</section>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>
+                <a href="https://www.dagmg.net" target="_blank"
+                   rel="noopener noreferrer">
+                    Return to DAGMG.net
+                </a>
+            </p>
+
+            <script src="file.js"></script>
+        </footer>
+
+    </div>
+
+</body>
+</html>
